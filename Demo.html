@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="hideTableColumn.js"></script>
+  <style>
+  .row{margin-top:10%;}
+  .table {border: 1px solid #ddd;}
+  .table>thead>tr>th{border: 1px solid #ddd;}
+  .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{border: 1px solid #ddd;}
+  .ajax-box{border: 1px solid #ddd;height:150px;}
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-lg-6 col-md-6">
+<div class="col-sm-6 col-lg-6 col-md-6">
+<h4>Hide table column list : <input name="" type="checkbox"> </h4>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+		<th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+		<td id="demo"></td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+		<td id="demo1"></td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+		<td id="demo2"></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="col-sm-6 col-lg-6 col-md-6">
+  
+  <div class="col-sm-12 col-lg-12 col-md-12">
+<h4>Ajax Reuest url...</h4>
+</div>
+  <div class="ajax-box col-sm-12 col-lg-12 col-md-12">
+  
+  </div>
+  </div>
+  </div>
+</div>
+
+</body>
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.getFullYear();
+document.getElementById("demo1").innerHTML = d.getFullYear();
+document.getElementById("demo2").innerHTML = d.getFullYear();
+</script>
+</html>
