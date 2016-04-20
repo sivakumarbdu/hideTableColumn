@@ -15,7 +15,7 @@ $(document).ready(function() {
 			name = $(this).attr("id");
 			dataId.push(name);
 		});
-		$("#ajax-box-inner").text(dataId);
+		$("#ajax-box-inner").text(JSON.stringify(dataId));
 		/*var pathVal = "${pageContext.request.contextPath}";
 		$.ajax({
 			url : pathVal + '/productoPantalla.do?metodo=saveTableConfigList',
