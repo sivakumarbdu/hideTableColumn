@@ -8,7 +8,8 @@
 
 $(document).ready(function() {
 	
-	/*$.ajax({url: '../getSaveedTableConfigList',
+	/*
+	$.ajax({url: '/myAjax?method=getSaveedTableConfigList',
 	 	   dataType: "json",
 	        contentType: "application/json; charset=utf-8",
 	          data: { tipo_id: 1}}).done(function(data) {
@@ -37,9 +38,9 @@ $(document).ready(function() {
 			dataId.push(name);
 		});
 		$("#ajax-box-inner").text(JSON.stringify(dataId));
-		/*var pathVal = "${pageContext.request.contextPath}";
+		/*
 		$.ajax({
-			url : pathVal + '/productoPantalla.do?metodo=saveTableConfigList',
+			url : '/myAjax?method=saveTableConfigList',
 			dataType : "json",
 			contentType : "application/json; charset=utf-8",
 			data : {
