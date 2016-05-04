@@ -18,8 +18,7 @@ $(document).ready(
 			}).done(
 					function(data) {
 						if (data.success == false) {
-							data["column"] = [ "firstNameId", "lastNameId",
-									"emailId", "yearId" ]
+							data["column"] = [ "firstNameId", "lastNameId","emailId", "yearId" ]
 						}
 						var allCheckedColumnFilters = []
 						$("div#productColumnId ul li input:checked").each(
@@ -27,8 +26,7 @@ $(document).ready(
 									name = $(this).attr("id");
 									allCheckedColumnFilters.push(name);
 								});
-						uncheckedFilters = $(allCheckedColumnFilters).not(
-								data["column"]).get();
+						uncheckedFilters = $(allCheckedColumnFilters).not(data["column"]).get();
 
 						$.each(uncheckedFilters, function(index, value) {
 							$("#" + value + "").prop("checked", false)
