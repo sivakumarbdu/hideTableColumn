@@ -7,6 +7,27 @@
  */
 
 $(document).ready(function() {
+	
+	/*$.ajax({url: '../getSaveedTableConfigList',
+	 	   dataType: "json",
+	        contentType: "application/json; charset=utf-8",
+	          data: { tipo_id: 1}}).done(function(data) {
+	        	  if(data.success == false)
+        		  {data["column"] = ["firstNameId","lastNameId","emailId","yearId"]} 
+	        var allCheckedColumnFilters = []
+		$( "div#productColumnId ul li input:checked" ).each(function( index ) {
+			 name = $(this).attr("id");
+			 allCheckedColumnFilters.push(name);
+		});
+	        	  uncheckedFilters = $(allCheckedColumnFilters).not(data["column"]).get();
+	        	  
+	        	  $.each(uncheckedFilters,function( index, value ) {
+	        		  $("#"+value+"").prop("checked",false)
+	        		  $("."+value).hide();
+	     		 });
+	        	}).fail(function() {
+		        });*/
+	
 	$("div#productColumnId ul li input").on("change", function(event) {
 		event.preventDefault();
 
