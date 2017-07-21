@@ -1,2 +1,3 @@
-# hideTableColumn
-To hide the table column and send the column hidden list(JSON) to DB using JavaScript(JS).    
+# Show/Hide Table Column
+
+Show/Hide the table columns by selecting/unselecting the checkbox and send it to backend.
